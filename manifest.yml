@@ -1,15 +1,8 @@
----
-declared-services:
-  my-conversation-service:
-    label: conversation
-    plan: free
 applications:
-- name: conversation-simple
-  command: npm start
-  path: .
+- path: .
   memory: 256M
   instances: 1
-  services:
-  - my-conversation-service
-  env:
-    NPM_CONFIG_PRODUCTION: false
+  domain: mybluemix.net
+  name: COMP4970-co
+  host: COMP4970-co
+  disk_quota: 1024M
